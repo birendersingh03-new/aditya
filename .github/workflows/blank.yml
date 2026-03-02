@@ -14,3 +14,17 @@ jobs:
         run: |
           echo "Hi"
           ls        
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first job
+        run: |
+          echo "second"
+          ls
+  third-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first job
+        run: |
+          echo "third" 
+          ls
