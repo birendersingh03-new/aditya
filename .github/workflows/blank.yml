@@ -1,0 +1,13 @@
+name: First-Job
+on: 
+  workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first job
+        run: |
+          echo "Hi"
+          ls
+          pwd
+          echo "End"
